@@ -118,3 +118,9 @@ footer p{margin:0 0 .5rem;font-weight:300;line-height:1.7}
 .capa{grid-template-columns:minmax(0,1fr);overflow-x:clip}
 .miolo,.logo{min-width:0;max-width:100%}
 .logo img{max-width:100%}
+
+/* Imagens nas reportagens */
+.destaque{max-width:56rem;margin:0 auto clamp(2.5rem,6vw,4rem)}
+.destaque img,.corpo figure img{display:block;width:100%;height:auto}
+.destaque figcaption{margin-top:.7rem;font-size:.85rem;color:var(--mute)}
+.corpo figure.retrato{max-width:30rem;margin:3rem auto}
