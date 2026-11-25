@@ -124,3 +124,27 @@ footer p{margin:0 0 .5rem;font-weight:300;line-height:1.7}
 .destaque img,.corpo figure img{display:block;width:100%;height:auto}
 .destaque figcaption{margin-top:.7rem;font-size:.85rem;color:var(--mute)}
 .corpo figure.retrato{max-width:30rem;margin:3rem auto}
+
+/* Navegação superior com dois links */
+.links{display:flex;align-items:baseline;gap:clamp(1rem,3vw,2rem)}
+.topo .links{justify-self:end}
+.lnk[aria-current]::after{transform:scaleX(1)}
+
+/* Legendas e variações de imagem nas reportagens */
+.corpo figcaption,.destaque figcaption{margin-top:.8rem;font-size:.85rem;line-height:1.5;color:var(--mute)}
+figcaption .cred{display:block;margin-top:.25rem;font:500 .68rem/1.4 var(--sans);letter-spacing:.14em;text-transform:uppercase}
+.corpo figure.quadrada{max-width:34rem;margin:3rem auto}
+@media(min-width:1000px){.corpo figure.paisagem{margin-left:-6rem;margin-right:-6rem}}
+.corpo .dateline{margin:0 0 .9rem}
+
+/* Página Missão, Visão e Valores */
+.princ{max-width:64rem;margin:0 auto}
+.princ section{display:grid;grid-template-columns:minmax(0,1fr);gap:1.25rem;padding:clamp(2rem,5vw,3.5rem) 0;border-top:1px solid var(--line)}
+.princ section:first-child{border-top:0;padding-top:0}
+.princ h2{margin:0;font:500 clamp(1.8rem,3.2vw,2.4rem)/1.1 var(--serif);letter-spacing:-.015em}
+.princ .decl{margin:0;font:400 clamp(1.35rem,2.5vw,1.9rem)/1.45 var(--serif);letter-spacing:-.01em;text-wrap:pretty}
+.princ dl{margin:0}
+.princ dt{margin:0 0 .45rem;font:500 clamp(1.2rem,2vw,1.45rem)/1.25 var(--serif)}
+.princ dd{margin:0 0 1.8rem;max-width:38rem;font-weight:300;line-height:1.75;color:#3a3a38}
+.princ dd:last-child{margin-bottom:0}
+@media(min-width:861px){.princ section{grid-template-columns:14rem minmax(0,1fr);gap:3rem}.princ h2{position:sticky;top:6rem;align-self:start}}
